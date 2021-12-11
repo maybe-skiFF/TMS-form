@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Form</title>
+</head>
+<body>
+   <section class="make-order">
+      <header class="header">
+         <div class="go-back">
+            <button class="go-back-button">
+               <div class="go-back-arrow"></div>
+               <p class="go-back-info">Продолжить выбор</p>
+            </button> 
+         </div>
+
+         <p class="contact-info">
+            <span class="phone-description">Наш телефон</span>
+            <span class="phone-number">+996 705 188 955</span>
+            <span class="phone-number">+996 555 188 955</span>
+            <span class="work-hours">
+               <img src="./img/clock.png" alt="clock">
+               работаем с 10:00 до 00:00
+            </span>
+         </p>
+      </header>
+
+      <form class="form">
+         <h2>Ваши данные</h2>
+
+         <div class="main-column">
+
+            <div class="column1">
+
+               <div class="column1-row1">
+                  <input type="tel" placeholder="Телефон" class="basic-input tel-input">
+                  <input type="text" placeholder="Имя" class="basic-input">
+               </div>
+
+               <div class="column1-row2">
+                  <input class="radio-base" type="radio" name="payType" id="cash" checked>
+                  <label class="basic-input radio-input left" for="cash"> <img class="img-purse" src="./img/purse.png" alt="purse"> <span>Наличными</span> </label>
+                  
+                  <input class="radio-base" type="radio" name="payType" id="card">
+                  <label class="basic-input radio-input right" for="card"><img class="img-card" src="./img/card.png" alt="card"> <span>Картой</span> </label>
+               </div>
+
+               <div class="column1-row3">
+                  <input class="checkbox-base" type="checkbox" name="changeType" id="change">
+                  <label for="change"> 
+                     <div class="change-text">
+                        <div class="change-style"></div>
+                        Подготовить сдачу с
+                     </div> 
+                  </label>
+                  <input class="change-base" type="tel" name="changeType" placeholder="Сдача">
+               </div>
+
+               <div class="column1-row4">
+                  <input type="text" class="basic-input order-comment" placeholder="Комментарий к заказу">
+               </div>
+            
+               <div class="column1-row5">
+
+                  <div class="column1-row5-wrapper">
+
+                     <div class="column1-row5-line1">
+                        <div class="choice-menu">
+                           <p class="choice-menu-text">Палочки + соусник обычные</p>
+                        </div>
+                        <button class="minus-meny-button">
+                           <div class="minus"></div>
+                        </button>
+                     
+                        <span class="meny-button-text">10</span>
+
+                        <button class="plus-meny-button">
+                           <div class="plus"></div>
+                        </button>
+                     </div>                        
+
+                     <div class="column1-row5-line2">
+                        <div class="choice-menu">
+                           <p class="choice-menu-text">Палочки + соусник обычные</p>
+                        </div>
+                        <button class="minus-meny-button">
+                           <div class="minus"></div>
+                        </button>
+                     
+                        <span class="meny-button-text">10</span>
+
+                        <button class="plus-meny-button">
+                           <div class="plus"></div>
+                        </button>
+                     </div>
+
+                  </div>
+                  
+               </div>
+               
+               <input class="basic-input promo-input" type="text" placeholder="Введите промокод">
+
+            </div>
+
+
+            <div class="column2">
+               <div class="column2-row1">
+                  <input class="сourier-base" type="radio" name="сourierType" id="сourier" checked>
+                  <label class="basic-input сourier-input left" for="сourier"> <span>Курьером</span> </label>
+                  
+                  <input class="сourier-base" type="radio" name="сourierType" id="pickup">
+                  <label class="basic-input сourier-input right" for="pickup"> <span>Самовывоз</span> </label>
+               </div>
+
+               <div class="column2-row2">
+                  <input type="text" placeholder="Улица" class="basic-input street-input">
+                  <input type="text" placeholder="Дом" class="basic-input house-input">
+               </div>
+
+               <div class="column2-row3">
+                  <input type="text" placeholder="Кв" class="basic-input apartment-input">
+                  <input type="text" placeholder="Подъезд" class="basic-input entry-input">
+                  <input type="text" placeholder="Этаж" class="basic-input floor-input">
+                  <input type="text" placeholder="Код" class="basic-input code-input">
+               </div>
+
+               <div class="column2-row4">
+                  <input class="delivery-base" type="radio" name="timeType" id="not-now" checked>
+                  <label class="basic-input delivery-input left" for="not-now"> <span>Не сейчас</span> </label>
+                  
+                  <input class="delivery-base" type="radio" name="timeType" id="in-time">
+                  <label class="basic-input delivery-input right" for="in-time"> <span>На время</span> </label>
+               </div>
+
+               <div class="column2-row5">
+                  <input class="basic-input email-base" type="text" placeholder="E-mail(необязательно)">
+               </div>
+
+            </div>
+
+         </div>
+
+         <div class="footer">
+            <div class="submit">
+               <button class="submit-button">Оформить заказ</button>
+            </div>
+            <div class="submit-text">
+               <p>Нажимая на кнопку Оформить заказ, 
+                  Вы подтверждаете свое согласие на 
+                  обработку персональных данных в<br> соответствии 
+                  с <u>Публичной оффертой</u>
+               </p>
+            </div>
+         </div>
+
+      </form> 
+   </section>
+</body>
+</html>
